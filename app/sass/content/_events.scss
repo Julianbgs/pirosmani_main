@@ -1,0 +1,109 @@
+.events-section{
+  position: relative;
+  float: left;
+  width: 100%;
+  background-image: url("../img/events.png");
+  padding-bottom: 50px;
+}
+
+.events-title{
+  position: relative;
+  float: left;
+  width: 100%;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.events-container{
+  position: relative;
+  float: left;
+  width: calc(50% - 30px);
+  border: 2px solid white;
+  margin-right: 30px;
+  margin-top: 30px;
+  box-sizing: border-box;
+
+  @include breakpoint(max-width 670px){
+    width: 100%;
+  }
+
+
+    .img-events{
+      float: left;
+      width:35%;
+
+      @include breakpoint(max-width 770px){
+        float: left;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 190px;
+      }
+
+        img{
+
+
+          @include breakpoint(max-width 770px){
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+        }
+    }
+
+    .events-text{
+      position: relative;
+      width: 65%;
+      float: right;
+      background-color: #deddda;
+
+      @include breakpoint(max-width 770px){
+        width: 100%;
+      }
+
+
+        h3{
+          color: black;
+          font-size: 18px;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-align: center;
+          padding-bottom: 15px;
+
+            &:before{
+              position: absolute;
+              content: "";
+              background-image: url("../img/usi.png");
+              background-repeat: no-repeat;
+              width: 73px;
+              height: 15px;
+              top: 45px;
+              right: 150px;
+
+              @include breakpoint(max-width 770px){
+                right: 130px;
+              }
+
+            }
+        }
+
+        .date{
+          color: #6a2f1b;
+          font-size: 16px;
+          font-weight: 700;
+          text-align: center;
+      }
+        .lorem{
+          color: black;
+          font-size: 16px;
+          font-weight: 400;
+          text-align: center;
+        }
+    }
+}

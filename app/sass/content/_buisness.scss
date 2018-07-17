@@ -1,0 +1,210 @@
+.buisness-section{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.buisness-title{
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #6a2f1b;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 30PX;
+}
+
+.buisness-tabs{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+
+    a{
+      position: relative;
+      float: left;
+      background-color: #75b63f;
+      border: 1.22px solid #75b63f;
+      border-radius: 3px;
+      color: #434343;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 14px;
+      text-transform: uppercase;
+      width: calc(20% -  10px);
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      margin-right: 10px;
+      box-sizing: border-box;
+
+      @include breakpoint(max-width 770px){
+        font-size: 17px;
+      }
+
+      &:after{
+        display: block;
+        content: "";
+        position: absolute;
+        width: 73px;
+        height: 15px;
+        overflow: hidden;
+        background-image: url("../img/usi.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin-top: 10px;
+      }
+      &.active{
+        background-color: #d2b637;
+      }
+    }
+}
+
+
+.buisness-menu {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+
+
+  .buisness-menu__one {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-top: 5px;
+    border: 1.22px solid #d2b637;
+    border-radius: 3px;
+
+    .menu-tablice {
+      display: flex;
+      border-bottom: 1.22px solid #d2b637;
+      padding-top: 20px;
+
+        &:nth-last-child(1){
+          border-bottom: none;
+        }
+
+    }
+
+    .menu-gram {
+      width: 20%;
+      color: #434343;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 14px;
+    }
+
+    .menu-cost {
+      width: 20%;
+      color: #434343;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 14px;
+      padding-left: 40px;
+
+      @include breakpoint(max-width 770px){
+        padding-left: 15px;
+      }
+    }
+
+    .menu-dishes {
+      width: 60%;
+      color: #434343;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 14px;
+      padding-left: 20px;
+    }
+  }
+
+  .buisness-menu__two {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-top: 5px;
+    border: 1.22px solid #d2b637;
+    border-radius: 3px;
+
+    .menu-tablice {
+      display: flex;
+      border-bottom: 1.22px solid #d2b637;
+      padding-top: 20px;
+    }
+
+    .menu-gram {
+      width: 20%;
+      color: #434343;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 14px;
+    }
+
+    .menu-cost {
+      width: 20%;
+      color: #434343;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 14px;
+      padding-left: 40px;
+
+      @include breakpoint(max-width 770px){
+        padding-left: 15px;
+      }
+    }
+
+    .menu-dishes {
+      width: 60%;
+      color: #434343;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 14px;
+      padding-left: 20px;
+    }
+
+    .menu-total {
+      position: relative;
+      color: #6a2f1b;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 14px;
+      float: right;
+      padding-top: 20px;
+    }
+  }
+}
+
+.buisness-button{
+  position: relative;
+  float: left;
+  width: 244px;
+  height: 54px;
+margin-left: 450px;
+  margin-top: 40px;
+  background-color: #d2b637;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 21px;
+  font-weight: 400;
+
+  @include breakpoint (max-width 1024px){
+    margin-left: 370px;
+  }
+
+  @include breakpoint (max-width 1024px){
+    margin-left: 245px;
+  }
+
+    a{
+      color: white;
+    }
+}

@@ -1,0 +1,55 @@
+ .section-baner{
+   position: relative;
+   width: 100%;
+   float: left;
+
+
+ }
+
+ .baner{
+   background-image: url("../img/baner.png");
+   background-size: cover;
+   padding-bottom: 50px;
+   padding-top: 75px;
+ }
+
+ h1{
+   font-weight: 400;
+   font-size: 55px;
+   color: white;
+   padding-top: 40px;
+ }
+
+ ul{
+   position: relative;
+   width: 100%;
+   float: left;
+   color: white;
+
+    li{}
+
+        a{
+          color: white;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 48px;
+        }
+
+ }
+
+ .baner__button{
+   position: relative;
+   float: left;
+   width: 264px;
+   height: 63px;
+   background-color: #d2b637;
+   border-radius: 10px;
+   color: white;
+   padding-top: 15px;
+   margin-left: 25px;
+   margin-top: 25px;
+   text-align: center;
+   font-size: 21px;
+   font-weight: 400;
+ }
+

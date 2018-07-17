@@ -1,0 +1,159 @@
+.menu-section{
+  position: relative;
+  float: left;
+  width: 100%;
+  background-image: url("../img/menu.png");
+}
+
+.menu-description{
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+
+.menu-tabs{
+  position: relative;
+  float: left;
+  width: 400px;
+
+  @include breakpoint(max-width 770px){
+    width: 300px;
+  }
+
+  @include breakpoint(max-width 670px){
+    width: 100%;
+  }
+
+  .menu-position {
+    position: relative;
+    width: 100%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: relative;
+      margin-bottom: 6px;
+      float: left;
+      width: 100%;
+
+      a {
+        position: relative;
+        float: left;
+        color: white;
+        font-size: 21px;
+        font-weight: 400;
+        opacity: 0.75;
+        background-color: #75b63f;
+        border-radius: 10px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+
+      }
+    }
+
+  }
+
+
+}
+
+.menu-body {
+  position: relative;
+  float: left;
+  width: calc(100% - 400px);
+  width: -webkit-calc(100% - 400px);
+  padding-bottom: 80px;
+  padding-left: 15px;
+  box-sizing: border-box;
+
+  @include breakpoint(max-width 770px){
+    width: -webkit-calc(100% - 300px);
+  }
+
+  @include breakpoint(max-width 670px){
+    width: 100%;
+  }
+
+    &__wrapper{
+      position: relative;
+      float: left;
+      width: 100%;
+      background-color: rgba(255,255,255, 0.85);
+      border: 1px solid #d2b637;
+      border-radius: 10px;
+
+    }
+
+    &__section{
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+  .menu-cold{
+    color: #6b311e;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 15px;
+
+      &:after{
+        display: block;
+        content: "";
+        position: absolute;
+        width: 73px;
+        height: 15px;
+        overflow: hidden;
+        background-image: url("../img/usi.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+      }
+  }
+
+  .menu-tablice{
+    display: flex;
+  }
+
+  .menu-gram{
+    width: 20%;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .menu-cost{
+    width: 20%;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 40px;
+
+    @include breakpoint(max-width 770px){
+      padding-left: 0;
+    }
+  }
+
+  .menu-dishes{
+    width: 60%;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+  }
+}
+
+

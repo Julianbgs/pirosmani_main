@@ -1,0 +1,125 @@
+.gallery-section{
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+
+.description{
+     color: black;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 14px;
+     text-transform: uppercase;
+     text-align: center;
+   }
+
+
+.gallery-buttons{
+  position: relative;
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+  @include breakpoint(max-width 670px){
+    flex-direction: column;
+  }
+
+
+    a{
+      color: black;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 14px;
+      text-transform: uppercase;
+      margin-right: 10px;
+      border: 1.22px solid #d2b637;
+      border-radius: 7px;
+      width: 374px;
+      height: 50px;
+      text-align: center;
+      padding-top: 15px;
+
+      @include breakpoint(max-width 670px){
+        width: 100%;
+      }
+
+    }
+}
+
+.top-slider{
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #ececec;
+}
+.top-slider__slider{
+ display: flex;
+
+}
+
+.top-slider__slide{
+  position: relative;
+  width: 100%;
+  float: left;
+
+     &:hover:after{
+       background-color: rgba(106,47,27,0.62);
+       display: block;
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       z-index: 1;
+       background-image: url(../img/icons/eye.png);
+       background-repeat: no-repeat;
+       background-position: center center;
+
+
+      }
+}
+
+.tour{
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+
+  @include breakpoint(max-width 670px){
+    font-size: 19px;
+  }
+}
+
+.tour-restourant{
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.panorama{
+  padding-left: 250px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  @include breakpoint(max-width 1024px){
+    padding-left: 155px;
+  }
+
+  @include breakpoint(max-width 770px){
+    padding-left: 50px;
+  }
+
+  @include breakpoint(max-width 670px){
+    padding-left: 0px;
+  }
+}
